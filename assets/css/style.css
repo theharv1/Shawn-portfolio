@@ -1,23 +1,18 @@
-/* portfolio images */
-
-.port-image {
-    margin: 10px auto;
-    box-align: center!important;
-}
-
-
-/* about me image */
-
-#about-img {
-    float: left;
-    width: 200px;
-    margin: 0 20px 10px 0;
-}
-
-
-/* footer css */
-
-@media only screen {
+    /* portfolio images */
+    
+    .port-image {
+        margin: 10px auto;
+        box-align: center!important;
+    }
+    /* about me image */
+    
+    .about-img {
+        float: left;
+        width: 200px;
+        margin: 0 20px 10px 0;
+    }
+    /* footer css */
+    
     .footer {
         position: absolute;
         bottom: 0;
@@ -28,34 +23,76 @@
         /* Vertically center the text there */
         background-color: lightblue;
     }
-    div.fixed-div {
-        position: static;
+    /* short screen css */
+    
+    @media only screen and (max-height:500px) {
+        .about-img {
+            margin-bottom: 100px;
+        }
     }
-    footer.fixed-footer {
-        position: static;
-        right: 0;
-        left: 0;
-        z-index: 1030;
+    /* longer screen css */
+    
+    @media only screen and (min-height:501px) {
+        .about-img {
+            margin-bottom: 0;
+        }
     }
-}
-
-
-/* submit button on contact page */
-
-.submit-btn {
-    background-color: lightblue;
-}
-
-
-/* nav bar */
-
-.navbar {
-    background-color: lightblue!important;
-}
-
-
-/* start container */
-
-body>.container {
-    padding: 60px 15px 0;
-}
+    /* wider screen css */
+    
+    @media only screen and (min-width: 992px) {
+        div.fixed-div {
+            position: static;
+        }
+        footer.fixed-footer {
+            position: fixed;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+        footer.scroll-footer {
+            position: static;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+        form.block {
+            margin-bottom: 80px;
+        }
+    }
+    /* narrow screen css */
+    
+    @media only screen and (max-width:991px) {
+        div.fixed-div {
+            position: static;
+        }
+        footer.fixed-footer {
+            position: static;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+        footer.scroll-footer {
+            position: static;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+        form.block {
+            margin-bottom: 20px;
+        }
+    }
+    /* submit button on contact page */
+    
+    .submit-btn {
+        background-color: lightblue;
+    }
+    /* nav bar */
+    
+    .navbar {
+        background-color: lightblue!important;
+    }
+    /* start container */
+    
+    body>.container {
+        padding: 60px 15px 0;
+    }
