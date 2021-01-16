@@ -15,4 +15,4 @@ https://theharv1.github.io/Shawn-portfolio/index.html
 ## Contribution
 Made by Shawn 
 
-![Password Generator](./passwordGen.img)
+![Portfolio](assets/img/screenshot.jpeg)
