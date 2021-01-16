@@ -95,3 +95,8 @@
     body>.container {
         padding: 60px 15px 0;
     }
+
+    .paragraph{
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
